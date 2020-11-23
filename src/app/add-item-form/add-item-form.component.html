@@ -1,9 +1,9 @@
-<form #itemForm="NgForm" (ngSubmit) = "onSubmit(itemForm)">
+<form #itemForm="ngForm" (ngSubmit) = "onSubmit(itemForm)">
     <div class="field is-horizontal">
         <div class="field-body">
             <div class="field is-narrow">
                 <p class="control">
-                    <input type="number" required name="amount" class="input" placeholder="amount" style="width:100px" [ngModel]='item.amount '>
+                    <input type="number" required name="amount" class="input" placeholder="amount" style="width:100px" [ngModel]='item.amount' required>
                 </p>
             </div>
 

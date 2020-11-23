@@ -71,19 +71,17 @@ const modules = [
 ]
 
 const components = [
-  ShellComponentsss
+  ShellComponent
 ]
 
 
 @NgModule({
-  declarations: [
-    ...components
-  ],
+  declarations: [ShellComponent],
   imports: [
     ...modules
   ],
   exports:[
-
+    ...modules,
     ...components
   ]
 })
